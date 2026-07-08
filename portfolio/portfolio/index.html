@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podili Susmitha | Frontend Web Developer</title>
+  <meta name="description" content="Portfolio of Podili Susmitha — Frontend Web Developer & Computer Science Engineering Student." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-mark">
+      <span>P</span><span>S</span>
+    </div>
+  </div>
+
+  <!-- ===================== CUSTOM CURSOR GLOW ===================== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===================== FLOATING BLOBS (GLOBAL) ===================== -->
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Podili<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#internship" class="nav-link">Internship</a>
+        <a href="#certifications" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" download class="btn btn-ghost small-btn">Resume</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text" data-reveal>
+        <p class="eyebrow">Hello, I&rsquo;m</p>
+        <h1 class="hero-name">Podili Susmitha</h1>
+        <h2 class="hero-role">
+          <span id="typingText"></span><span class="cursor-blink">|</span>
+        </h2>
+        <p class="hero-desc">
+          Motivated Computer Science student with strong programming fundamentals and hands-on
+          experience in frontend web development. Passionate about building responsive,
+          user-friendly web applications while continuously learning modern technologies and
+          improving problem-solving skills.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:susmitha@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="hero-ring">
+          <div class="hero-photo">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Podili Susmitha"
+              style="width:100%; height:100%; border-radius:50%; object-fit:cover;"
+            />
+          </div>
+          <div class="orbit-chip chip-1"><i class="fa-brands fa-java"></i></div>
+          <div class="orbit-chip chip-2"><i class="fa-brands fa-html5"></i></div>
+          <div class="orbit-chip chip-3"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="orbit-chip chip-4"><i class="fa-brands fa-js"></i></div>
+          <div class="orbit-chip chip-5"><i class="fa-brands fa-python"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="section-head" data-reveal>
+      <p class="tag">About Me</p>
+      <h2>The Person Behind The Code</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass" data-reveal>
+        <p>
+          I am <strong>Podili Susmitha</strong>, a Computer Science Engineering student at
+          Vignan&rsquo;s Foundation for Science, Technology and Research with a CGPA of
+          <strong>8.78</strong>.
+        </p>
+        <p>
+          I enjoy creating modern and responsive web applications while continuously learning
+          new technologies.
+        </p>
+        <p>
+          I have practical experience in Java programming, frontend development, database
+          management, and Django-based applications.
+        </p>
+        <p>
+          I am passionate about software development, UI design, and solving real-world problems
+          through technology.
+        </p>
+        <p>
+          I enjoy teamwork, communication, and continuously improving my technical skills.
+        </p>
+      </div>
+
+      <div class="about-stats" data-reveal>
+        <div class="stat-card">
+          <span class="stat-number" data-count="8.78">0</span>
+          <p>CGPA</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="5">0</span>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="4">0</span>
+          <p>Certifications</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="1">0</span>
+          <p>Internship</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section education" id="education">
+    <div class="section-head" data-reveal>
+      <p class="tag">Education</p>
+      <h2>Academic Journey</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-duration">2024 &mdash; Present</span>
+          <h3>B.Tech &mdash; Computer Science &amp; Engineering</h3>
+          <p class="timeline-org">Vignan&rsquo;s Foundation for Science, Technology and Research</p>
+          <span class="timeline-cgpa">CGPA: 8.78</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills">
+    <div class="section-head" data-reveal>
+      <p class="tag">Skills</p>
+      <h2>What I Bring To The Table</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-col" data-reveal>
+        <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+        <div class="skill-bar" data-level="85">
+          <div class="skill-bar-top"><span>Java</span><em>85%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="80">
+          <div class="skill-bar-top"><span>Python</span><em>80%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="70">
+          <div class="skill-bar-top"><span>C</span><em>70%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-col" data-reveal>
+        <h3><i class="fa-solid fa-layer-group"></i> Frontend</h3>
+        <div class="skill-bar" data-level="90">
+          <div class="skill-bar-top"><span>HTML5</span><em>90%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="88">
+          <div class="skill-bar-top"><span>CSS3</span><em>88%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="82">
+          <div class="skill-bar-top"><span>JavaScript</span><em>82%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-col" data-reveal>
+        <h3><i class="fa-solid fa-database"></i> Framework &amp; Database</h3>
+        <div class="skill-bar" data-level="75">
+          <div class="skill-bar-top"><span>Django</span><em>75%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="78">
+          <div class="skill-bar-top"><span>DBMS</span><em>78%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar" data-level="76">
+          <div class="skill-bar-top"><span>MySQL</span><em>76%</em></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools-grid" data-reveal>
+      <div class="tool-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+      <div class="tool-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+      <div class="tool-card"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+      <div class="tool-card"><i class="fa-brands fa-python"></i><span>PyCharm</span></div>
+      <div class="tool-card"><i class="fa-solid fa-laptop-code"></i><span>Eclipse</span></div>
+      <div class="tool-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+    </div>
+
+    <div class="soft-skills" data-reveal>
+      <div class="soft-chip">Communication</div>
+      <div class="soft-chip">Teamwork</div>
+      <div class="soft-chip">Time Management</div>
+      <div class="soft-chip">Quick Learner</div>
+      <div class="soft-chip">Problem Solving</div>
+      <div class="soft-chip">Continuous Learning</div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects">
+    <div class="section-head" data-reveal>
+      <p class="tag">Projects</p>
+      <h2>Things I&rsquo;ve Built</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card" data-reveal>
+        <div class="project-image"><i class="fa-solid fa-hospital"></i></div>
+        <div class="project-body">
+          <h3>Hospital Stock Management System</h3>
+          <p>Built a system to manage and track hospital inventory and medical supplies. Automated
+            stock monitoring and maintained records through a user-friendly interface.</p>
+          <div class="badges">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Database</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-ghost small-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary small-btn">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-image"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div class="project-body">
+          <h3>Smart Inventory Management System</h3>
+          <p>Developed a full-stack inventory management system using Django, Python, SQLite,
+            Bootstrap 5, and Chart.js.</p>
+          <ul class="feature-list">
+            <li>Inventory Tracking</li>
+            <li>Sales Reporting</li>
+            <li>Low Stock Alerts</li>
+            <li>Interactive Analytics Dashboard</li>
+          </ul>
+          <div class="badges">
+            <span>Django</span><span>Python</span><span>SQLite</span><span>Chart.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-ghost small-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary small-btn">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-image"><i class="fa-solid fa-window-maximize"></i></div>
+        <div class="project-body">
+          <h3>Responsive Landing Page</h3>
+          <p>Responsive landing page with interactive navigation menu using HTML, CSS, and
+            JavaScript.</p>
+          <div class="badges">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-ghost small-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary small-btn">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-image"><i class="fa-solid fa-stopwatch"></i></div>
+        <div class="project-body">
+          <h3>Stopwatch Web Application</h3>
+          <p>Interactive stopwatch with start, pause, reset, and lap functionality.</p>
+          <div class="badges">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-ghost small-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary small-btn">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-image"><i class="fa-solid fa-hashtag"></i></div>
+        <div class="project-body">
+          <h3>Tic Tac Toe Web Application</h3>
+          <p>Interactive two-player game with winner detection and responsive interface.</p>
+          <div class="badges">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-ghost small-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#" class="btn btn-primary small-btn">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== INTERNSHIP ===================== -->
+  <section class="section internship" id="internship">
+    <div class="section-head" data-reveal>
+      <p class="tag">Internship</p>
+      <h2>Professional Experience</h2>
+    </div>
+
+    <div class="internship-card glass" data-reveal>
+      <div class="internship-icon"><i class="fa-solid fa-building"></i></div>
+      <div>
+        <h3>Web Development Intern</h3>
+        <p class="internship-company">Prodigy InfoTech</p>
+        <p>
+          Successfully completed frontend web development projects using HTML, CSS, and
+          JavaScript while gaining practical experience in responsive web design and interactive
+          web applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section certifications" id="certifications">
+    <div class="section-head" data-reveal>
+      <p class="tag">Certifications</p>
+      <h2>Credentials &amp; Learning</h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card" data-reveal>
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Mastering Agentic AI</h3>
+        <p>Building Smart AI Agents</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <i class="fa-solid fa-certificate"></i>
+        <h3>TCS iON Career Edge</h3>
+        <p>Communication Skills</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <i class="fa-solid fa-certificate"></i>
+        <h3>AI Workshop</h3>
+        <p>NxtWave</p>
+      </div>
+      <div class="cert-card" data-reveal>
+        <i class="fa-solid fa-certificate"></i>
+        <h3>Networking Basics</h3>
+        <p>Cisco</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="section achievements" id="achievements">
+    <div class="section-head" data-reveal>
+      <p class="tag">Achievements</p>
+      <h2>Milestones I&rsquo;m Proud Of</h2>
+    </div>
+
+    <div class="achieve-grid">
+      <div class="achieve-card" data-reveal>
+        <i class="fa-solid fa-award"></i>
+        <p>Certified in <strong>PET by Cambridge University</strong> for English proficiency.</p>
+      </div>
+      <div class="achieve-card" data-reveal>
+        <i class="fa-solid fa-crown"></i>
+        <p>Served as <strong>Vertical Head of Promotions Team</strong> for Mahostav-2024 at
+          Vignan&rsquo;s University.</p>
+      </div>
+      <div class="achieve-card" data-reveal>
+        <i class="fa-solid fa-people-group"></i>
+        <p>Guided peers in <strong>programming fundamentals</strong> and project development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="section-head" data-reveal>
+      <p class="tag">Contact</p>
+      <h2>Let&rsquo;s Build Something Great</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info glass" data-reveal>
+        <h3>Get In Touch</h3>
+        <p>
+          Have an opportunity, project, or just want to say hello? My inbox is always open.
+        </p>
+
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-envelope"></i> podilisusmitha4@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +91 7981266086</li>
+          <li><i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India</li>
+        </ul>
+
+        <div class="social-row">
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:susmitha@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form glass" id="contactForm" data-reveal novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary full-btn">
+          <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <p class="form-success" id="formSuccess">Thank you! Your message has been noted. I&rsquo;ll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Podili Susmitha. Crafted with care &mdash; HTML, CSS &amp; JavaScript.</p>
+    <button class="to-top" id="toTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
